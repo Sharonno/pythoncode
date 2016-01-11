@@ -16,6 +16,9 @@ def MaxDepth(root):
         return max(MaxDepth(root.left), MaxDepth(root.right)) + 1
   
 def MaxWidth(root):
+    '''
+    双向队列求宽度。队列存的是树
+    '''
     if not root:
         return 0
     q = Queue.Queue()
